@@ -96,7 +96,7 @@ def get_bboxes(rclasses, rbboxes):
 
 # load net
 net = SiamRPNvot()
-net.load_state_dict(torch.load(join(realpath(dirname(__file__)), 'DaSiamRPN-master/code/SiamRPNVOT.model')))
+net.load_state_dict(torch.load(join(realpath(dirname(__file__)), 'DaSiamRPN/SiamRPNVOT.model')))
 
 net.eval()
 
