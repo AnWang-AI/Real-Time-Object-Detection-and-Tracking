@@ -8,4 +8,4 @@ Combing object detecting and object tracking. The object detecting algorithm is 
 
 代码执行环境：python, opencv, tensorflow, pytorch均更新为最新。
 
-直接运行SSD+SiamRPN.py即可。
+下载代码后直接运行SSD+SiamRPN.py即可。
