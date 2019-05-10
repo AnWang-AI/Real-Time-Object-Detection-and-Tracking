@@ -3,11 +3,11 @@ This project combines object detecting and object tracking. The detector will de
 
 ### Prerequisites
 
-python
-numpy
-opencv
-tensorflow
-pytorch
+* python
+* numpy
+* opencv
+* tensorflow
+* pytorch
 
 ### Pretrained model for SSD
 
