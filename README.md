@@ -2,10 +2,15 @@
 Combing object detecting and object tracking. The object detecting algorithm is SSD and the object detecting algorithm is SiamRPN. Both algorithms are real-time.
 
 # 目标检测和目标跟踪结合
+
+### 目标检测
 目标检测算法使用的是SSD算法，该算法程序基于tensorflow实现。具体见：https://github.com/wcwowwwww/SSD-Tensorflow
 
 论文地址为https://arxiv.org/abs/1512.02325
 
+预训练的模型可以从 https://drive.google.com/file/d/0B0qPCUZ-3YwWUXh4UHJrd1RDM3c/view?usp=sharing 中下载，下载后放在SSD/checkpoints文件夹中。
+
+### 目标追踪
 目标跟踪算法使用的是SiamFPN算法，该算法程序基于pytorch实现。具体见：https://github.com/wcwowwwww/DaSiamRPN
 
 论文地址为http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf
