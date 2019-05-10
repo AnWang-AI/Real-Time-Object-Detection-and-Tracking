@@ -1,3 +1,12 @@
+# ======================================================================
+# 
+#         filename : SSD+SiamRPN.py
+#         description :
+# 
+#         created by Wang An at  2019.4.18
+# 
+# ======================================================================
+
 import sys
 from os.path import realpath, dirname, join
 
