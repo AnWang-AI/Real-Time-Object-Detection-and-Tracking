@@ -1,25 +1,16 @@
-# -------------------------------  #
-import cv2
 import sys
-
-import os
-import math
-import random
-
-import tensorflow as tf
-
-from nets import ssd_vgg_300, ssd_common, np_methods
-from preprocessing import ssd_vgg_preprocessing
-
-# -------------------------------  #
-
-import glob, torch
-import numpy as np
 from os.path import realpath, dirname, join
 
+import cv2
+import numpy as np
+import tensorflow as tf
+import torch
+
 from net import SiamRPNvot
+from nets import ssd_vgg_300, np_methods
+from preprocessing import ssd_vgg_preprocessing
 from run_SiamRPN import SiamRPN_init, SiamRPN_track
-from utils import get_axis_aligned_bbox, cxy_wh_2_rect
+from utils import cxy_wh_2_rect
 
 # -------------------------------  #
 
@@ -57,7 +48,7 @@ with slim.arg_scope(ssd_net.arg_scope(data_format=data_format)):
 
 # Restore SSD model.
 # ckpt_filename = 'checkpoints/ssd_300_vgg.ckpt'
-ckpt_filename = 'SSD-Tensorflow/checkpoints/VGG_VOC0712_SSD_300x300_ft_iter_120000.ckpt'
+ckpt_filename = 'SSD/checkpoints/VGG_VOC0712_SSD_300x300_ft_iter_120000.ckpt'
 
 isess.run(tf.global_variables_initializer())
 saver = tf.train.Saver()
@@ -84,6 +75,7 @@ def process_image(img, select_threshold=0.5, nms_threshold=.45, net_shape=(300, 
     # Resize bboxes to original image shape. Note: useless for Resize.WARP!
     rbboxes = np_methods.bboxes_resize(rbbox_img, rbboxes)
     return rclasses, rscores, rbboxes
+
 
 def get_bboxes(rclasses, rbboxes):
     # get center location of object
@@ -135,8 +127,8 @@ while index:
             xmin = int((bbox['x_min']) * width)
             ymax = int(bbox['y_max'] * height)
             xmax = int((bbox['x_max']) * width)
-            cx = (xmin+xmax)/2
-            cy = (ymin+ymax)/2
+            cx = (xmin + xmax) / 2
+            cy = (ymin + ymax) / 2
             h = ymax - ymin
             w = xmax - xmin
             new_bbox = (cx, cy, w, h)
@@ -147,7 +139,6 @@ while index:
 # tracker init
 target_pos, target_sz = np.array([cx, cy]), np.array([w, h])
 state = SiamRPN_init(frame, target_pos, target_sz, net)
-
 
 # tracking and visualization
 toc = 0
