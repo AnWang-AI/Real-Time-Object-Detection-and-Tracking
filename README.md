@@ -28,7 +28,7 @@ You can download model from https://drive.google.com/file/d/0B0qPCUZ-3YwWUXh4UHJ
 
 You can download model from https://drive.google.com/drive/folders/1BtIkp5pB6aqePQGlMb2_Z7bfPy6XEj6H , then please put this model into subfolder 'DaSiamRPN', so that the tracker can find and load the pretrained_model.
 
-# 目标检测和目标跟踪结合
+# 结合目标检测和目标跟踪
 
 ### 目标检测
 目标检测算法使用的是SSD算法，该算法程序基于tensorflow实现。具体见：https://github.com/wcwowwwww/SSD-Tensorflow
