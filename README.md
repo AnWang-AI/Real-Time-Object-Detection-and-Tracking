@@ -6,7 +6,11 @@ If you are interested in the princile of these algorithms, please read these pap
 * SSD: https://arxiv.org/abs/1512.02325
 * SiamRPN: https://arxiv.org/abs/1512.02325
 
-You can find origin project of SSD in https://github.com/wcwowwwww/SSD-Tensorflow, and SiamRPN in https://github.com/wcwowwwww/DaSiamRPN.
+This repository includes original Tensorflow code of SSD
+* https://github.com/wcwowwwww/SSD-Tensorflow 
+
+This repository includes original pytorch code of SiamRPN
+* https://github.com/wcwowwwww/DaSiamRPN.
 
 ### Prerequisites
 
