@@ -1,5 +1,21 @@
 # Object-detecting-and-tracking
-Combing object detecting and object tracking. The object detecting algorithm is SSD and the object detecting algorithm is SiamRPN. Both algorithms are real-time.
+This project combines object detecting and object tracking. The detector will detect the objects of the image captured by camera and the tracker will track the one of objects choosed by user. The detector is SSD model and tracker is SiamFPN model. Both models are real-time algorithms. You can run 'SSD+SiamRPN.py' to achieve object detecting and tracking.
+
+### Prerequisites
+
+python
+numpy
+opencv
+tensorflow
+pytorch
+
+### Pretrained model for SSD
+
+You can download model from https://drive.google.com/file/d/0B0qPCUZ-3YwWUXh4UHJrd1RDM3c/view?usp=sharing , then please put this model in subfolder 'SSD/checkpoints', so that the detector can find and load the pretrained_model.
+
+### Pretrained model for SiamRPN
+
+You can download model from https://drive.google.com/drive/folders/1BtIkp5pB6aqePQGlMb2_Z7bfPy6XEj6H , then please put this model in subfolder 'DaSiamRPN', so that the tracker can find and load the pretrained_model.
 
 # 目标检测和目标跟踪结合
 
@@ -21,7 +37,7 @@ Combing object detecting and object tracking. The object detecting algorithm is 
 
 代码执行环境：python, opencv, tensorflow, pytorch均更新为最新即可。
 
-下载代码后运行SSD+SiamRPN.py，可以实现对摄像头前目标的检测和跟踪。
+下载代码和模型后运行SSD+SiamRPN.py，可以实现对摄像头前目标的检测和跟踪。
 
 ### spaceshoot
 spaceshoot文件夹内是一款飞行设计类游戏，运行Detection+Tracking+SpaceShooter.py可以打开游戏，按enter进入游戏后，飞机可以由摄像头前的目标控制移动。
