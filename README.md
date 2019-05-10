@@ -1,6 +1,13 @@
 # Object-detecting-and-tracking
 This project combines object detecting and object tracking. The detector will detect the objects of the image captured by camera and the tracker will track the one of objects choosed by user. The detector is SSD model and tracker is SiamFPN model. Both models are real-time algorithms. You can run 'SSD+SiamRPN.py' to achieve object detecting and tracking.
 
+If you are interested in the princile of these algorithms, please read these papaers:
+
+* SSD: https://arxiv.org/abs/1512.02325
+* SiamRPN: https://arxiv.org/abs/1512.02325
+
+You can find origin project of SSD in https://github.com/wcwowwwww/SSD-Tensorflow, and SiamRPN in https://github.com/wcwowwwww/DaSiamRPN.
+
 ### Prerequisites
 
 * python
@@ -11,11 +18,11 @@ This project combines object detecting and object tracking. The detector will de
 
 ### Pretrained model for SSD
 
-You can download model from https://drive.google.com/file/d/0B0qPCUZ-3YwWUXh4UHJrd1RDM3c/view?usp=sharing , then please put this model in subfolder 'SSD/checkpoints', so that the detector can find and load the pretrained_model.
+You can download model from https://drive.google.com/file/d/0B0qPCUZ-3YwWUXh4UHJrd1RDM3c/view?usp=sharing , then please put this model into subfolder 'SSD/checkpoints', so that the detector can find and load the pretrained_model.
 
 ### Pretrained model for SiamRPN
 
-You can download model from https://drive.google.com/drive/folders/1BtIkp5pB6aqePQGlMb2_Z7bfPy6XEj6H , then please put this model in subfolder 'DaSiamRPN', so that the tracker can find and load the pretrained_model.
+You can download model from https://drive.google.com/drive/folders/1BtIkp5pB6aqePQGlMb2_Z7bfPy6XEj6H , then please put this model into subfolder 'DaSiamRPN', so that the tracker can find and load the pretrained_model.
 
 # 目标检测和目标跟踪结合
 
