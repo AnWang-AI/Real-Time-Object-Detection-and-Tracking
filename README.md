@@ -6,6 +6,6 @@ Combing object detecting and object tracking. The object detecting algorithm is 
 目标跟踪算法使用的是SiamFPN算法，该算法程序基于pytorch实现。
 这两个算法的精度和速度都表现非常好，能够在CPU条件下流畅运行。
 
-代码执行环境：python, opencv, tensorflow, pytorch均更新为最新即可。
+代码执行环境：python, opencv, tensorflow, pytorch均更新为最新。
 
 直接运行SSD+SiamRPN.py即可。
