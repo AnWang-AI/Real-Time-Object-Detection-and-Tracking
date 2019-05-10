@@ -1,5 +1,5 @@
 # Object-detecting-and-tracking
-This project combines object detecting and object tracking. The detector will detect the objects of the image captured by camera and the tracker will track the one of objects choosed by user. The detector is SSD model and tracker is SiamFPN model. Both models are real-time algorithms. You can run 'SSD+SiamRPN.py' to achieve object detecting and tracking.
+This project combines object detection and object tracking. The detector will detect the objects of the image captured by camera and the tracker will track the one of objects choosed by user. The detector is SSD model and tracker is SiamFPN model. Both models are real-time algorithms. You can run 'SSD+SiamRPN.py' to achieve object detecting and tracking.
 
 If you are interested in the princile of these algorithms, please read these papaers:
 
