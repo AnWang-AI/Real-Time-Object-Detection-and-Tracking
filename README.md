@@ -4,7 +4,7 @@ This project combines object detection and object tracking. The detector will de
 If you are interested in the princile of these algorithms, please read these papaers:
 
 * SSD: https://arxiv.org/abs/1512.02325
-* SiamRPN: https://arxiv.org/abs/1512.02325
+* SiamRPN: http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf
 
 This repository includes original Tensorflow code of SSD
 * https://github.com/wcwowwwww/SSD-Tensorflow 
