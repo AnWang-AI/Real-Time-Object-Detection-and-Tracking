@@ -3,8 +3,8 @@ This project combines object detection and object tracking. The detector will de
 
 If you are interested in the princile of these algorithms, please read these papaers:
 
-* SSD: https://arxiv.org/abs/1512.02325
-* SiamRPN: http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf
+* SSD: [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325)
+* SiamRPN: [High Performance Visual Tracking with Siamese Region Proposal Network](http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf)
 
 This repository includes original Tensorflow code of SSD
 * https://github.com/wcwowwwww/SSD-Tensorflow 
@@ -33,14 +33,15 @@ You can download model from https://drive.google.com/drive/folders/1BtIkp5pB6aqe
 ### 目标检测
 目标检测算法使用的是SSD算法，该算法程序基于tensorflow实现。具体见：https://github.com/wcwowwwww/SSD-Tensorflow
 
-论文地址为: https://arxiv.org/abs/1512.02325
+论文地址为: [SSD: Single Shot MultiBox Detector](https://arxiv.org/abs/1512.02325)
 
 预训练的模型可以从 https://drive.google.com/file/d/0B0qPCUZ-3YwWUXh4UHJrd1RDM3c/view?usp=sharing 中下载，下载后放在SSD/checkpoints文件夹中。
 
 ### 目标追踪
 目标跟踪算法使用的是SiamFPN算法，该算法程序基于pytorch实现。具体见：https://github.com/wcwowwwww/DaSiamRPN
 
-论文地址为: http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf
+论文地址为: [High Performance Visual Tracking with Siamese Region Proposal Network](http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf)
+
 
 预训练的模型请在 https://drive.google.com/drive/folders/1BtIkp5pB6aqePQGlMb2_Z7bfPy6XEj6H 下载SiamRPNVOT.model文件后放入DaSiamRPN文件夹中即可。
 
