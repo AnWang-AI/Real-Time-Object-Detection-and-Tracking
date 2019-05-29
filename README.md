@@ -52,6 +52,6 @@ You can download model from https://drive.google.com/drive/folders/1BtIkp5pB6aqe
 下载代码和模型后运行SSD+SiamRPN.py，可以实现对摄像头前目标的检测和跟踪。
 
 ### spaceshoot
-spaceshoot文件夹内是一款飞行设计类游戏，运行Detection+Tracking+SpaceShooter.py可以打开游戏，按enter进入游戏后，飞机可以由摄像头前的目标控制移动。
+spaceshoot文件夹内是一款飞行设计类游戏，运行detection_tracking_game来打开游戏，按enter进入游戏后，飞机可以通过移动摄像头前的目标控制移动。
 
 
